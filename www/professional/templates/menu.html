@@ -1,0 +1,33 @@
+<ion-side-menus enable-menu-with-back-views="false">
+	<ion-side-menu-content>
+		<ion-nav-bar class="bar-royal">
+			<ion-nav-back-button>
+			</ion-nav-back-button>
+
+			<ion-nav-buttons side="left">
+				<button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+				</button>
+			</ion-nav-buttons>
+		</ion-nav-bar>
+		<ion-nav-view name="menuContent"></ion-nav-view>
+	</ion-side-menu-content>
+
+	<ion-side-menu side="left">
+		<ion-content>
+			<ion-list>
+				<ion-item menu-close class="text-center item-borderless" ui-sref="pro.profile">
+					<div style="border-radius: 50%" class="menu-picture" ng-style="{'background-image': 'url(http://i.huffpost.com/gen/1103941/images/o-INDIAN-WOMAN-facebook.jpg'}"></div>
+					<br/>
+					<br/>
+					<h2>Profissional da Silva</h2>
+				</ion-item>
+				<ion-item menu-close ui-sref="pro.calendar">
+					Calendário
+				</ion-item>
+				<ion-item menu-close ng-click="authModal.show()">
+					Sair
+				</ion-item>
+			</ion-list>
+		</ion-content>
+	</ion-side-menu>
+</ion-side-menus>

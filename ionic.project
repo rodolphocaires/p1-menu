@@ -1,0 +1,12 @@
+{
+  "name": "p1-menu",
+  "app_id": "346ff103",
+  "gulpStartupTasks": [
+    "sass",
+    "watch"
+  ],
+  "watchPatterns": [
+    "www/**/*",
+    "!www/lib/**/*"
+  ]
+}

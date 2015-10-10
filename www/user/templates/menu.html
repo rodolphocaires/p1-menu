@@ -1,0 +1,36 @@
+<ion-side-menus enable-menu-with-back-views="false">
+	<ion-side-menu-content>
+		<ion-nav-bar class="bar-royal">
+			<ion-nav-back-button>
+			</ion-nav-back-button>
+
+			<ion-nav-buttons side="left">
+				<button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+				</button>
+			</ion-nav-buttons>
+		</ion-nav-bar>
+		<ion-nav-view name="menuContent"></ion-nav-view>
+	</ion-side-menu-content>
+
+	<ion-side-menu side="left">
+		<ion-content>
+			<ion-list>
+				<ion-item menu-close class="text-center item-borderless" ui-sref="user.profile">
+					<div style="border-radius: 50%" class="menu-picture" ng-style="{'background-image': 'url(http://weknowyourdreams.com/images/woman/woman-02.jpg)'}"></div>
+					<br/>
+					<br/>
+					<h2>Usuária da Silva</h2>
+				</ion-item>
+				<ion-item menu-close ui-sref="user.nearby">
+					Manicures por perto
+				</ion-item>
+				<ion-item menu-close ui-sref="user.search">
+					Buscar manicures
+				</ion-item>
+				<ion-item menu-close ng-click="authModal.show()">
+					Sair
+				</ion-item>
+			</ion-list>
+		</ion-content>
+	</ion-side-menu>
+</ion-side-menus>
