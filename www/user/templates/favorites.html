@@ -1,0 +1,10 @@
+<ion-view view-title="Manicures favoritas">
+	<ion-content>
+		<ion-list>
+			<ion-item ng-repeat="manicure in manicures">
+				<h2>{{manicure.name}}</h2>
+				<div star-rating data-max="5" rating-value="manicure.rating"></div>
+			</ion-item>
+		</ion-list>
+	</ion-content>
+</ion-view>

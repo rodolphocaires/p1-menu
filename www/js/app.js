@@ -56,6 +56,15 @@ app.config(function ($stateProvider, $urlRouterProvider) {
 			}
 		}
 	})
+	.state('user.favorites', {
+		url: '/favorites',
+		views: {
+			'menuContent': {
+				templateUrl: 'user/templates/favorites.html',
+				controller: 'FavoritesCtrl'
+			}
+		}
+	})
 	.state('user.search', {
 		url: '/search',
 		views: {

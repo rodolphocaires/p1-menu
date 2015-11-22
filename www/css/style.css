@@ -18,6 +18,7 @@
 .login-bg {
 	-webkit-background-size: cover;
 	background-size: cover;
+	background-position: center center;
 }
 .login-actions {
 	position: absolute;
@@ -52,7 +53,7 @@
 
 @media all and (orientation: portrait) {
 	.login-bg {
-		background-image: url('/img/login-bg.jpg');
+		background-image: url('../img/login-bg.jpg');
 	}
 }
 
